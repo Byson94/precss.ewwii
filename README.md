@@ -1,6 +1,8 @@
 # precss.ewwii
 
-Ewwii plugin that provides a list of predefined classes to make it easier to work with css.
+Ewwii plugin that provides a list of predefined classes to make it easier to work with css. 
+
+[See All Classes](https://byson94.is-a.dev/precss.ewwii/book/classes.html)
 
 ## Prerequisite
 
