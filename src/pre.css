@@ -1,0 +1,109 @@
+/* Borders & Shapes */
+
+/* @section borders & shape */
+/* @class rounded-sm */
+/* @desc Slightly round the widget */
+.rounded-sm { border-radius: 4px; }
+
+/* @section borders & shape */
+/* @class rounded */
+/* @desc Round the widget */
+.rounded    { border-radius: 10px; }
+
+/* @section borders & shape */
+/* @class rounded-lg */
+/* @desc Greately round the widget */
+.rounded-lg { border-radius: 16px; }
+
+/* @section borders & shape */
+/* @class fully-rounded */
+/* @desc Fully round the widget into a pill/circular shape */
+.fully-rounded { border-radius: 9999px; }
+
+/* @section borders & shape */
+/* @class border-thin */
+/* @desc Add a thin border to the widget */
+.border-thin  { border: 1px solid var(--border-color, rgba(255,255,255,0.1)); }
+
+/* @section borders & shape */
+/* @class border-thick */
+/* @desc Add a thick border to the widget */
+.border-thick { border: 2px solid var(--border-color, rgba(255,255,255,0.2)); }
+
+/* Containers */
+.surface-panel {
+    background-color: var(--bg-surface, #24283b);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.surface-card {
+    background-color: var(--bg-card, #1f2335);
+    border: 1px solid var(--border-color, rgba(255,255,255,0.08));
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.floating-overlay {
+    background-color: var(--bg-overlay, rgba(26, 27, 38, 0.85));
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+/* Interactive Components */
+.btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: var(--bg-button, #3b4261);
+    color: var(--fg-default, #a9b1d6);
+}
+
+.btn-primary {
+    background-color: var(--accent, #7aa2f7);
+    color: #1a1b26;
+}
+
+.btn-destructive {
+    background-color: var(--critical, #f7768e);
+    color: #ffffff;
+}
+
+/* Clickable list entries or menu rows */
+.list-row-interactive {
+    padding: 10px 14px;
+    border-radius: 6px;
+    background-color: transparent;
+}
+.list-row-interactive:hover {
+    background-color: var(--bg-hover, rgba(255, 255, 255, 0.05));
+}
+.list-row-interactive:active {
+    background-color: var(--bg-active, rgba(255, 255, 255, 0.1));
+}
+
+/* Typography & Badges */
+.text-header {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--fg-bright, #c0caf5);
+}
+
+.text-muted {
+    font-size: 0.875rem;
+    color: var(--fg-muted, #787c99);
+}
+
+.badge {
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: var(--bg-badge, #292e42);
+}
+
+.badge-success {
+    color: var(--success, #9ece6a);
+    background-color: rgba(158, 206, 106, 0.15);
+}

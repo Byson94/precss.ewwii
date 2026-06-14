@@ -1,0 +1,8 @@
+[book]
+authors = ["Byson94"]
+language = "en"
+src = "src"
+title = "precss.ewwii"
+
+[output.html]
+additional-css = ["theme/custom.css"]

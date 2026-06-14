@@ -1,0 +1,15 @@
+{
+  "components": {
+    "artifacts": false,
+    "changelog": false
+  },
+  "build": {
+    "path_prefix": "precss.ewwii"
+  },
+  "project": {
+    "repository": "https://github.com/byson94/precss.ewwii"
+  },
+  "styles": {
+    "theme": "axodark"
+  }
+}
