@@ -1,42 +1,50 @@
-/* Borders & Shapes */
+/* --- Borders & Shapes --- */
 
 /* @section borders & shape */
 /* @class rounded-sm */
-/* @desc Slightly round the widget */
+/* @desc Subtle rounded corners (4px) */
 .rounded-sm { border-radius: 4px; }
 
 /* @section borders & shape */
 /* @class rounded */
-/* @desc Round the widget */
+/* @desc Normal rounded corners (10px) */
 .rounded    { border-radius: 10px; }
 
 /* @section borders & shape */
 /* @class rounded-lg */
-/* @desc Greately round the widget */
+/* @desc Highly rounded corners for large boxes (16px) */
 .rounded-lg { border-radius: 16px; }
 
 /* @section borders & shape */
 /* @class fully-rounded */
-/* @desc Fully round the widget into a pill/circular shape */
+/* @desc Turns elements into circles or pill shapes */
 .fully-rounded { border-radius: 9999px; }
 
 /* @section borders & shape */
 /* @class border-thin */
-/* @desc Add a thin border to the widget */
+/* @desc Adds a thin 1px outline border */
 .border-thin  { border: 1px solid var(--border-color, rgba(255,255,255,0.1)); }
 
 /* @section borders & shape */
 /* @class border-thick */
-/* @desc Add a thick border to the widget */
+/* @desc Adds a thick 2px outline border */
 .border-thick { border: 2px solid var(--border-color, rgba(255,255,255,0.2)); }
 
-/* Containers */
+
+/* --- Containers --- */
+
+/* @section containers */
+/* @class surface-panel */
+/* @desc Main background panel for widgets and layouts */
 .surface-panel {
     background-color: var(--bg-surface, #24283b);
     border-radius: 12px;
     padding: 16px;
 }
 
+/* @section containers */
+/* @class surface-card */
+/* @desc Inner card background to group items inside a panel */
 .surface-card {
     background-color: var(--bg-card, #1f2335);
     border: 1px solid var(--border-color, rgba(255,255,255,0.08));
@@ -44,6 +52,9 @@
     padding: 12px;
 }
 
+/* @section containers */
+/* @class floating-overlay */
+/* @desc Floating box with shadow for menus and notifications */
 .floating-overlay {
     background-color: var(--bg-overlay, rgba(26, 27, 38, 0.85));
     border-radius: 16px;
@@ -51,7 +62,12 @@
     padding: 20px;
 }
 
-/* Interactive Components */
+
+/* --- Interactive Components --- */
+
+/* @section interactive */
+/* @class btn */
+/* @desc Standard clickable button style */
 .btn {
     padding: 8px 16px;
     border-radius: 8px;
@@ -60,17 +76,25 @@
     color: var(--fg-default, #a9b1d6);
 }
 
+/* @section interactive */
+/* @class btn-primary */
+/* @desc Colored button used for main actions */
 .btn-primary {
     background-color: var(--accent, #7aa2f7);
     color: #1a1b26;
 }
 
+/* @section interactive */
+/* @class btn-destructive */
+/* @desc Red button used for delete or exit actions */
 .btn-destructive {
     background-color: var(--critical, #f7768e);
     color: #ffffff;
 }
 
-/* Clickable list entries or menu rows */
+/* @section interactive */
+/* @class list-row-interactive */
+/* @desc Clickable menu row that lights up when hovered or pressed */
 .list-row-interactive {
     padding: 10px 14px;
     border-radius: 6px;
@@ -83,18 +107,29 @@
     background-color: var(--bg-active, rgba(255, 255, 255, 0.1));
 }
 
-/* Typography & Badges */
+
+/* --- Typography & Badges --- */
+
+/* @section typography & badges */
+/* @class text-header */
+/* @desc Large, bright text used for titles */
 .text-header {
     font-size: 1.25rem;
     font-weight: 800;
     color: var(--fg-bright, #c0caf5);
 }
 
+/* @section typography & badges */
+/* @class text-muted */
+/* @desc Small, faded text used for secondary info */
 .text-muted {
     font-size: 0.875rem;
     color: var(--fg-muted, #787c99);
 }
 
+/* @section typography & badges */
+/* @class badge */
+/* @desc Small tag or label with a dark background pill shape */
 .badge {
     padding: 2px 8px;
     font-size: 0.75rem;
@@ -103,7 +138,340 @@
     background-color: var(--bg-badge, #292e42);
 }
 
+/* @section typography & badges */
+/* @class badge-success */
+/* @desc Green status label indicating success or active states */
 .badge-success {
     color: var(--success, #9ece6a);
     background-color: rgba(158, 206, 106, 0.15);
+}
+
+/* --- Progress & Slider Utilities --- */
+
+/* @section progress & sliders */
+/* @class progress-bar-fill */
+/* @desc The filled portion of a progress tracker or battery level bar */
+.progress-bar-fill {
+    background-color: var(--accent, #7aa2f7);
+    border-radius: 4px;
+}
+
+/* @section progress & sliders */
+/* @class slider-trough */
+/* @desc The empty background track of volume/brightness sliders */
+.slider-trough {
+    background-color: var(--bg-card, #1f2335);
+    border: 1px solid var(--border-color, rgba(255,255,255,0.08));
+    border-radius: 9999px;
+    min-height: 8px;
+}
+
+
+/* --- Stateful Components --- */
+
+/* @section stateful components */
+/* @class switch-track-active */
+/* @desc Background track of a toggle switch when flipped to ON */
+.switch-track-active {
+    background-color: var(--success, #9ece6a);
+    border-radius: 9999px;
+}
+
+/* @section stateful components */
+/* @class list-row-selected */
+/* @desc Highlighted background state for currently active menu choices or active workspaces */
+.list-row-selected {
+    background-color: var(--accent, #7aa2f7);
+    color: #1a1b26;
+    font-weight: bold;
+}
+
+
+/* --- Layout Enhancements --- */
+
+/* @section layout enhancements */
+/* @class separator-h */
+/* @desc A thin horizontal divider line to break up content inside modules */
+.separator-h {
+    border-bottom: 1px solid var(--border-color, rgba(255,255,255,0.1));
+    min-height: 1px;
+}
+
+/* @section layout enhancements */
+/* @class separator-v */
+/* @desc A thin vertical divider line to separate side-by-side items */
+.separator-v {
+    border-right: 1px solid var(--border-color, rgba(255,255,255,0.1));
+    min-width: 1px;
+}
+
+
+/* --- Specialized Presentation Modules --- */
+
+/* @section presentation */
+/* @class card-header */
+/* @desc Top border highlight frame tailored for system graphs or hardware monitors */
+.card-header {
+    border-top: 3px solid var(--accent, #7aa2f7);
+    background-color: var(--bg-card, #1f2335);
+    padding: 12px;
+}
+
+/* @section presentation */
+/* @class input-field */
+/* @desc Styling for custom user input boxes or terminal command runners */
+.input-field {
+    background-color: var(--bg-card, #1f2335);
+    border: 1px solid var(--border-color, rgba(255,255,255,0.1));
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: var(--fg-bright, #c0caf5);
+}
+
+
+/* --- System Warnings --- */
+
+/* @section warnings */
+/* @class alert-banner */
+/* @desc High-visibility danger strip for critically low battery or lost internet */
+.alert-banner {
+    background-color: rgba(247, 118, 142, 0.15);
+    border: 1px solid var(--critical, #f7768e);
+    border-radius: 8px;
+    padding: 10px 14px;
+}
+
+/* @section warnings */
+/* @class text-warning */
+/* @desc Yellow-tinted typography scale for low urgency battery or update alerts */
+.text-warning {
+    color: #e0af68;
+    font-weight: bold;
+}
+
+/* --- Animation Utilities & Timings --- */
+
+/* @section animations */
+/* @class ease-in-out */
+/* @desc Easing transition that starts slow, accelerates, then slows down at the end */
+.ease-in-out {
+    transition: all 0.3s ease-in-out;
+}
+
+/* @section animations */
+/* @class ease-out */
+/* @desc Easing transition that snaps instantly and slows to a smooth halt */
+.ease-out {
+    transition: all 0.25s ease-out;
+}
+
+/* @section animations */
+/* @class ease-in */
+/* @desc Easing transition that starts slow and hits full speed dramatically at the finish */
+.ease-in {
+    transition: all 0.25s ease-in;
+}
+
+/* @section animations */
+/* @class fade-in */
+/* @desc Smoothly fades an invisible element to completely visible */
+.fade-in {
+    animation: fadeInAnimation 0.3s ease-out forwards;
+}
+
+/* @section animations */
+/* @class fade-out */
+/* @desc Smoothly fades an element to completely translucent */
+.fade-out {
+    animation: fadeOutAnimation 0.3s ease-in forwards;
+}
+
+/* @section animations */
+/* @class scale-in */
+/* @desc Pops a widget up into view by blowing it up from a smaller size scale */
+.scale-in {
+    animation: scaleInAnimation 0.25s ease-out forwards;
+}
+
+/* @section animations */
+/* @class scale-out */
+/* @desc Shrinks a widget down until it collapses out of the presentation layer */
+.scale-out {
+    animation: scaleOutAnimation 0.2s ease-in forwards;
+}
+
+/* @section animations */
+/* @class slide-up */
+/* @desc Glides a hidden bottom module upwards into its active resting placement */
+.slide-up {
+    animation: slideUpAnimation 0.3s ease-out forwards;
+}
+
+/* @section animations */
+/* @class slide-down */
+/* @desc Glides an active top module downwards into its active resting placement */
+.slide-down {
+    animation: slideDownAnimation 0.3s ease-out forwards;
+}
+
+/* @section animations */
+/* @class pulse-glow */
+/* @desc Continuous breathing light effect tailored for indicators or low battery warnings */
+.pulse-glow {
+    animation: pulseGlowAnimation 2.0s ease-in-out infinite;
+}
+
+/* --- Animation Durations --- */
+
+/* @section animations */
+/* @class duration-fast */
+/* @desc Snappy 150ms playback tailored for quick UI state switches like hover fades */
+.duration-fast {
+    animation-duration: 0.15s;
+    transition-duration: 0.15s;
+}
+
+/* @section animations */
+/* @class duration-normal */
+/* @desc Standard 300ms playback optimized for natural feeling window and panel entries */
+.duration-normal {
+    animation-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+/* @section animations */
+/* @class duration-slow */
+/* @desc Deliberate 500ms playback suited for heavy full-screen multi-step widgets */
+.duration-slow {
+    animation-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+
+/* --- Animation Delays --- */
+
+/* @section animations */
+/* @class delay-none */
+/* @desc Executes the animation immediately with zero standby time */
+.delay-none {
+    animation-delay: 0s;
+    transition-delay: 0s;
+}
+
+/* @section animations */
+/* @class delay-short */
+/* @desc Postpones the animation start by 100ms */
+.delay-short {
+    animation-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+/* @section animations */
+/* @class delay-long */
+/* @desc Postpones the animation start by 300ms to wait for primary layout transitions to clear */
+.delay-long {
+    animation-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+
+/* --- Playback Control & Counts --- */
+
+/* @section animations */
+/* @class loop-infinite */
+/* @desc Forces the keyframe loop to repeat forever (best used with pulse-glow or loading wheels) */
+.loop-infinite {
+    animation-iteration-count: infinite;
+}
+
+/* @section animations */
+/* @class loop-once */
+/* @desc Restricts execution to run exactly once through the timeline sequence */
+.loop-once {
+    animation-iteration-count: 1;
+}
+
+/* @section animations */
+/* @class freeze-frame */
+/* @desc Directs GTK to hold the visual elements on the very last keyframe when complete */
+.freeze-frame {
+    animation-fill-mode: forwards;
+}
+
+/* @section animations */
+/* @class reset-frame */
+/* @desc Instantly snaps elements back to their initial un-animated look once finished */
+.reset-frame {
+    animation-fill-mode: backwards;
+}
+
+
+/* --- GTK4 Keyframe Definitions --- */
+
+@keyframes fadeInAnimation {
+    from { opacity: 0.0; }
+    to   { opacity: 1.0; }
+}
+
+@keyframes fadeOutAnimation {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+}
+
+@keyframes scaleInAnimation {
+    from { 
+        opacity: 0.0; 
+        transform: scale(0.9); 
+        -gtk-icon-transform: scale(0.9); 
+    }
+    to { 
+        opacity: 1.0; 
+        transform: scale(1.0); 
+        -gtk-icon-transform: scale(1.0); 
+    }
+}
+
+@keyframes scaleOutAnimation {
+    from { 
+        opacity: 1.0; 
+        transform: scale(1.0); 
+        -gtk-icon-transform: scale(1.0); 
+    }
+    to { 
+        opacity: 0.0; 
+        transform: scale(0.9); 
+        -gtk-icon-transform: scale(0.9); 
+    }
+}
+
+@keyframes slideUpAnimation {
+    from { 
+        transform: translateY(15px); 
+        -gtk-icon-transform: translateY(15px); 
+        opacity: 0.0; 
+    }
+    to { 
+        transform: translateY(0px); 
+        -gtk-icon-transform: translateY(0px); 
+        opacity: 1.0; 
+    }
+}
+
+@keyframes slideDownAnimation {
+    from { 
+        transform: translateY(-15px); 
+        -gtk-icon-transform: translateY(-15px); 
+        opacity: 0.0; 
+    }
+    to { 
+        transform: translateY(0px); 
+        -gtk-icon-transform: translateY(0px); 
+        opacity: 1.0; 
+    }
+}
+
+@keyframes pulseGlowAnimation {
+    0%   { opacity: 0.4; }
+    50%  { opacity: 1.0; }
+    100% { opacity: 0.4; }
 }
