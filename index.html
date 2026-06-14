@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" id="oranda" class="dark axo">
+  <head>
+    <title>precss</title>
+    
+    
+      <link rel="icon" href="/precss.ewwii/favicon.ico" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="precss" />
+    
+    
+    
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+    <link rel="stylesheet" href="/precss.ewwii/oranda-v0.6.1.css" />
+    
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-body">
+        
+          <div class="repo_banner">
+            <a href="https://github.com/byson94/precss.ewwii">
+              <div class="github-icon" aria-hidden="true"></div>
+              Check out our GitHub!
+            </a>
+          </div>
+        
+
+        <main>
+          <header>
+            
+            <h1 class="title">precss</h1>
+            
+  <nav class="nav">
+    <ul>
+      <li><a href="/precss.ewwii/">Home</a></li>
+
+      
+
+      
+
+      
+        <li><a href="/precss.ewwii/book/">Docs</a></li>
+      
+
+      
+
+      
+    </ul>
+  </nav>
+
+          </header>
+
+          
+
+
+    <h1>precss.ewwii</h1>
+<p>Ewwii plugin that provides a list of predefined classes to make it easier to work with css.</p>
+<p><a href="https://byson94.is-a.dev/precss.ewwii/book/classes.html" rel="noopener noreferrer">See All Classes</a></p>
+<h2>Prerequisite</h2>
+<p>Before you get started with using precss, make sure to store your color scheme as variables like so:</p>
+<pre style="background-color:#263238;"><span style="font-style:italic;color:#546e7a;">/* 
+</span><span style="font-style:italic;color:#546e7a;">    You should use the exact name
+</span><span style="font-style:italic;color:#546e7a;">    otherwise precss wont work.
+</span><span style="font-style:italic;color:#546e7a;">*/
+</span><span style="color:#89ddff;">:</span><span style="color:#eeffff;">root </span><span style="color:#89ddff;">{
+</span><span style="color:#eeffff;">    </span><span style="color:#89ddff;">--</span><span style="color:#ffcb6b;">bg-surface</span><span style="color:#89ddff;">: #</span><span style="color:#ffffff;">1e1e2e</span><span style="color:#89ddff;">;
+</span><span style="color:#eeffff;">    </span><span style="color:#89ddff;">--</span><span style="color:#ffcb6b;">bg-card</span><span style="color:#89ddff;">: #</span><span style="color:#ffffff;">252538</span><span style="color:#89ddff;">;
+</span><span style="color:#eeffff;">    </span><span style="color:#89ddff;">--</span><span style="color:#ffcb6b;">border-color</span><span style="color:#89ddff;">: </span><span style="color:#82aaff;">rgba</span><span style="color:#89ddff;">(</span><span style="color:#f78c6c;">255</span><span style="color:#89ddff;">, </span><span style="color:#f78c6c;">255</span><span style="color:#89ddff;">, </span><span style="color:#f78c6c;">255</span><span style="color:#89ddff;">, </span><span style="color:#f78c6c;">0.08</span><span style="color:#89ddff;">);
+</span><span style="color:#eeffff;">    </span><span style="color:#89ddff;">--</span><span style="color:#ffcb6b;">fg-bright</span><span style="color:#89ddff;">: #</span><span style="color:#ffffff;">cdd6f4</span><span style="color:#89ddff;">;
+</span><span style="color:#eeffff;">    </span><span style="color:#89ddff;">--</span><span style="color:#ffcb6b;">fg-default</span><span style="color:#89ddff;">: #</span><span style="color:#ffffff;">a6adc8</span><span style="color:#89ddff;">;
+</span><span style="color:#eeffff;">    </span><span style="color:#89ddff;">--</span><span style="color:#ffcb6b;">fg-muted</span><span style="color:#89ddff;">: #</span><span style="color:#ffffff;">bac2de</span><span style="color:#89ddff;">;
+</span><span style="color:#eeffff;">    </span><span style="color:#89ddff;">--</span><span style="color:#ffcb6b;">accent</span><span style="color:#89ddff;">: #</span><span style="color:#ffffff;">cba6f7</span><span style="color:#89ddff;">;
+</span><span style="color:#eeffff;">    </span><span style="color:#89ddff;">--</span><span style="color:#ffcb6b;">critical</span><span style="color:#89ddff;">: #</span><span style="color:#ffffff;">f38ba8</span><span style="color:#89ddff;">;
+</span><span style="color:#eeffff;">    </span><span style="color:#89ddff;">--</span><span style="color:#ffcb6b;">success</span><span style="color:#89ddff;">: #</span><span style="color:#ffffff;">a6e3a1</span><span style="color:#89ddff;">;
+</span><span style="color:#89ddff;">}
+</span></pre>
+
+<h2>Installation</h2>
+<p>Installation using <a href="https://github.com/ewwii-sh/eiipm" rel="noopener noreferrer">eiipm</a></p>
+<pre style="background-color:#263238;"><span style="font-style:italic;color:#546e7a;"># if you prefer prebuilt
+</span><span style="color:#82aaff;">eiipm add </span><span style="color:#89ddff;">"</span><span style="color:#c3e88d;">byson94/precss.ewwii</span><span style="color:#89ddff;">" --</span><span style="color:#f78c6c;">prebuilt</span><span style="color:#89ddff;"> --</span><span style="color:#f78c6c;">ref </span><span style="color:#89ddff;">&lt;</span><span style="color:#82aaff;">version</span><span style="color:#89ddff;">&gt;
+</span><span style="color:#eeffff;">
+</span><span style="font-style:italic;color:#546e7a;"># if you prefer building yourself
+</span><span style="color:#82aaff;">eiipm add </span><span style="color:#89ddff;">"</span><span style="color:#c3e88d;">byson94/precss.ewwii</span><span style="color:#89ddff;">"                  </span><span style="font-style:italic;color:#546e7a;"># Up to date with "main" branch
+</span><span style="color:#82aaff;">eiipm add </span><span style="color:#89ddff;">"</span><span style="color:#c3e88d;">byson94/precss.ewwii</span><span style="color:#89ddff;">" --</span><span style="color:#f78c6c;">ref </span><span style="color:#89ddff;">&lt;</span><span style="color:#82aaff;">version</span><span style="color:#89ddff;">&gt;</span><span style="color:#82aaff;">  # Locked to a specific version
+</span></pre>
+
+<p>Or download from <a href="https://github.com/byson94/precss.ewwii/releases/" rel="noopener noreferrer">GitHub Releases</a>.
+If you are downloading manually, make sure to put it in <code>plugins/</code> directory for ewwii to load it.</p>
+<h2>Usage</h2>
+<p>Using precss is simple. Just add one of the precss classes to your widget and see the magic!</p>
+<pre style="background-color:#263238;"><span style="color:#eeffff;">Box {
+</span><span style="color:#eeffff;">    class </span><span style="color:#89ddff;">= "</span><span style="color:#c3e88d;">rounded-sm border-thin fade-in duration-slow</span><span style="color:#89ddff;">"
+</span><span style="color:#eeffff;">
+</span><span style="color:#eeffff;">    Label {
+</span><span style="color:#eeffff;">        text </span><span style="color:#89ddff;">= "</span><span style="color:#c3e88d;">Hello, World!</span><span style="color:#89ddff;">"
+</span><span style="color:#eeffff;">    }
+</span><span style="color:#eeffff;">}
+</span></pre>
+
+<h2>License</h2>
+<p>Precss is under the CC0 (public domain) license. It is free to use, modify, and redistribute without any restriction whatsoever.</p>
+
+
+
+        </main>
+      </div>
+
+      <footer>
+        
+          <a href="https://github.com/byson94/precss.ewwii"><div class="github-icon" aria-hidden="true"></div></a>
+        
+        <span>
+          precss
+        </span>
+      </footer>
+    </div>
+
+    
+    
+
+    
+
+
+  </body>
+</html>
