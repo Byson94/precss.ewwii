@@ -4,7 +4,7 @@
     "changelog": false
   },
   "build": {
-    "path_prefix": "precss.ewwii"
+    "path_prefix": null
   },
   "project": {
     "repository": "https://github.com/byson94/precss.ewwii"
