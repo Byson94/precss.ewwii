@@ -58,4 +58,4 @@ Box {
 
 ## License
 
-Precss is under the CC0 license. It is free to use, modify, and redistribute without any restriction whatsoever.
+Precss is under the CC0 (public domain) license. It is free to use, modify, and redistribute without any restriction whatsoever.
