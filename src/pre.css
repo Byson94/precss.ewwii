@@ -2,7 +2,7 @@
 
 /* @section borders & shape */
 /* @class rounded-sm */
-/* @desc Subtle rounded corners (4px) */
+/* @desc Slightly rounded corners (4px) */
 .rounded-sm { border-radius: 4px; }
 
 /* @section borders & shape */
@@ -325,7 +325,7 @@
 
 /* @section animations */
 /* @class duration-fast */
-/* @desc Snappy 150ms playback tailored for quick UI state switches like hover fades */
+/* @desc Fast 150ms playback */
 .duration-fast {
     animation-duration: 0.15s;
     transition-duration: 0.15s;
@@ -333,7 +333,7 @@
 
 /* @section animations */
 /* @class duration-normal */
-/* @desc Standard 300ms playback optimized for natural feeling window and panel entries */
+/* @desc Standard 300ms playback */
 .duration-normal {
     animation-duration: 0.3s;
     transition-duration: 0.3s;
@@ -341,7 +341,7 @@
 
 /* @section animations */
 /* @class duration-slow */
-/* @desc Deliberate 500ms playback suited for heavy full-screen multi-step widgets */
+/* @desc Slow 500ms playback */
 .duration-slow {
     animation-duration: 0.5s;
     transition-duration: 0.5s;
@@ -352,7 +352,7 @@
 
 /* @section animations */
 /* @class delay-none */
-/* @desc Executes the animation immediately with zero standby time */
+/* @desc Executes the animation immediately */
 .delay-none {
     animation-delay: 0s;
     transition-delay: 0s;
@@ -368,7 +368,7 @@
 
 /* @section animations */
 /* @class delay-long */
-/* @desc Postpones the animation start by 300ms to wait for primary layout transitions to clear */
+/* @desc Postpones the animation start by 300ms */
 .delay-long {
     animation-delay: 0.3s;
     transition-delay: 0.3s;
@@ -379,7 +379,7 @@
 
 /* @section animations */
 /* @class loop-infinite */
-/* @desc Forces the keyframe loop to repeat forever (best used with pulse-glow or loading wheels) */
+/* @desc Forces the keyframe loop to repeat forever */
 .loop-infinite {
     animation-iteration-count: infinite;
 }
