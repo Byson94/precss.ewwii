@@ -44,6 +44,16 @@ If you are downloading manually, make sure to put it in `plugins/` directory for
 
 Using precss is simple. Just add one of the precss classes to your widget and see the magic!
 
+```lua
+Box {
+    class = "rounded-sm border-thin fade-in duration-slow"
+
+    Label {
+        text = "Hello, World!"
+    }
+}
+```
+
 ## License
 
 Precss is under the CC0 license. It is free to use, modify, and redistribute without any restriction whatsoever.
