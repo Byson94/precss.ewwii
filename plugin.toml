@@ -3,4 +3,4 @@ build = "cargo build --release"
 artifact = "target/release/libprecess.so"
 
 [plugin.prebuilt]
-url = "https://github.com/byson94/libprecess.ewwii/releases/download/{version}/libprecess.so"
+url = "https://github.com/byson94/precss.ewwii/releases/download/{version}/libprecess.so"
